@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
 	int money;
-	cout << "Ââåäèòå ñóììó: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑƒÐ¼Ð¼Ñƒ: ";
 	cin >> money;
 	cout << money << " - ";
 
@@ -16,28 +16,28 @@ void main()
 	int thousand = copy / 1000;
 	switch (thousand)
 	{
-	case 1: cout << "Îäíà "; break;
-	case 2: cout << "Äâå "; break;
-	case 3: cout << "Òðè "; break;
-	case 4: cout << "×åòûðå "; break;
-	case 5: cout << "Ïÿòü "; break;
-	case 6: cout << "Øåñòü "; break;
-	case 7: cout << "Ñåìü "; break;
-	case 8: cout << "Âîñåìü "; break;
-	case 9: cout << "Äåâÿòü "; break;
+	case 1: cout << "ÐžÐ´Ð½Ð° "; break;
+	case 2: cout << "Ð”Ð²Ðµ "; break;
+	case 3: cout << "Ð¢Ñ€Ð¸ "; break;
+	case 4: cout << "Ð§ÐµÑ‚Ñ‹Ñ€Ðµ "; break;
+	case 5: cout << "ÐŸÑÑ‚ÑŒ "; break;
+	case 6: cout << "Ð¨ÐµÑÑ‚ÑŒ "; break;
+	case 7: cout << "Ð¡ÐµÐ¼ÑŒ "; break;
+	case 8: cout << "Ð’Ð¾ÑÐµÐ¼ÑŒ "; break;
+	case 9: cout << "Ð”ÐµÐ²ÑÑ‚ÑŒ "; break;
 	}
 
 	if (thousand % 10 == 1)
 	{
-		cout << " òûñÿ÷à ";
+		cout << " Ñ‚Ñ‹ÑÑÑ‡Ð° ";
 	}
 	else if (thousand % 10 < 5)
 	{
-		cout << " òûñÿ÷è ";
+		cout << " Ñ‚Ñ‹ÑÑÑ‡Ð¸ ";
 	}
 	else if (thousand % 20 > 4 || thousand % 10 == 0)
 	{
-		cout << " òûñÿ÷ ";
+		cout << " Ñ‚Ñ‹ÑÑÑ‡ ";
 	}
 
 	copy -= thousand * 1000;
@@ -46,15 +46,15 @@ void main()
 	int hundred = copy / 100;
 	switch (hundred)
 	{
-	case 1: cout << "Ñòî "; break;
-	case 2: cout << "Äâåñòè "; break;
-	case 3: cout << "Òðèñòà "; break;
-	case 4: cout << "×åòûðåñòà "; break;
-	case 5: cout << "Ïÿòüñîò "; break;
-	case 6: cout << "Øåñòüñîò "; break;
-	case 7: cout << "Ñåìüñîò "; break;
-	case 8: cout << "Âîñåìüñîò "; break;
-	case 9: cout << "Äåâÿòüñîò "; break;
+	case 1: cout << "Ð¡Ñ‚Ð¾ "; break;
+	case 2: cout << "Ð”Ð²ÐµÑÑ‚Ð¸ "; break;
+	case 3: cout << "Ð¢Ñ€Ð¸ÑÑ‚Ð° "; break;
+	case 4: cout << "Ð§ÐµÑ‚Ñ‹Ñ€ÐµÑÑ‚Ð° "; break;
+	case 5: cout << "ÐŸÑÑ‚ÑŒÑÐ¾Ñ‚ "; break;
+	case 6: cout << "Ð¨ÐµÑÑ‚ÑŒÑÐ¾Ñ‚ "; break;
+	case 7: cout << "Ð¡ÐµÐ¼ÑŒÑÐ¾Ñ‚ "; break;
+	case 8: cout << "Ð’Ð¾ÑÐµÐ¼ÑŒÑÐ¾Ñ‚ "; break;
+	case 9: cout << "Ð”ÐµÐ²ÑÑ‚ÑŒÑÐ¾Ñ‚ "; break;
 	}
 	copy -= hundred * 100;
 
@@ -65,25 +65,25 @@ void main()
 	{
 		switch (ten)
 		{
-		case 1: cout << " Îäèí "; break;
-		case 2: cout << " Äâà "; break;
-		case 3: cout << " Òðè "; break;
-		case 4: cout << " ×åòûðå "; break;
-		case 5: cout << " Ïÿòü"; break;
-		case 6: cout << " Øåñòü "; break;
-		case 7: cout << " Ñåìü "; break;
-		case 8: cout << " Âîñåìü "; break;
-		case 9: cout << " Äåâÿòü "; break;
-		case 10: cout << " Äåñÿòü "; break;
-		case 11: cout << " Îäèííàäöàòü "; break;
-		case 12: cout << " Äâåíàäöàòü "; break;
-		case 13: cout << " Òðèíàäöàòü "; break;
-		case 14: cout << " ×åòûðíàäöàòü "; break;
-		case 15: cout << " Ïÿòíàäöàòü "; break;
-		case 16: cout << " Øåñòíàäöàòü "; break;
-		case 17: cout << " Ñåìüíàäöàòü "; break;
-		case 18: cout << " Âîñåìüíàäöàòü "; break;
-		case 19: cout << " Äåâÿòíàäöàòü "; break;
+		case 1: cout << " ÐžÐ´Ð¸Ð½ "; break;
+		case 2: cout << " Ð”Ð²Ð° "; break;
+		case 3: cout << " Ð¢Ñ€Ð¸ "; break;
+		case 4: cout << " Ð§ÐµÑ‚Ñ‹Ñ€Ðµ "; break;
+		case 5: cout << " ÐŸÑÑ‚ÑŒ"; break;
+		case 6: cout << " Ð¨ÐµÑÑ‚ÑŒ "; break;
+		case 7: cout << " Ð¡ÐµÐ¼ÑŒ "; break;
+		case 8: cout << " Ð’Ð¾ÑÐµÐ¼ÑŒ "; break;
+		case 9: cout << " Ð”ÐµÐ²ÑÑ‚ÑŒ "; break;
+		case 10: cout << " Ð”ÐµÑÑÑ‚ÑŒ "; break;
+		case 11: cout << " ÐžÐ´Ð¸Ð½Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 12: cout << " Ð”Ð²ÐµÐ½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 13: cout << " Ð¢Ñ€Ð¸Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 14: cout << " Ð§ÐµÑ‚Ñ‹Ñ€Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 15: cout << " ÐŸÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 16: cout << " Ð¨ÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 17: cout << " Ð¡ÐµÐ¼ÑŒÐ½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 18: cout << " Ð’Ð¾ÑÐµÐ¼ÑŒÐ½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 19: cout << " Ð”ÐµÐ²ÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
 
 		}
 	}
@@ -93,48 +93,48 @@ void main()
 		ten /= 10;
 		switch (ten)
 		{
-			//case 1: cout << "Ñòî "; break;
-		case 2: cout << "Äâàäöàòü "; break;
-		case 3: cout << "Òðèäöàòü "; break;
-		case 4: cout << "Ñîðîê "; break;
-		case 5: cout << "Ïÿòüäåñÿò "; break;
-		case 6: cout << "Øåñòüäåñÿò "; break;
-		case 7: cout << "Ñåìüäåñÿò "; break;
-		case 8: cout << "Âîñåìüäåñÿò "; break;
-		case 9: cout << "Äåâÿíîñòî "; break;
+			//case 1: cout << "Ð¡Ñ‚Ð¾ "; break;
+		case 2: cout << "Ð”Ð²Ð°Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 3: cout << "Ð¢Ñ€Ð¸Ð´Ñ†Ð°Ñ‚ÑŒ "; break;
+		case 4: cout << "Ð¡Ð¾Ñ€Ð¾Ðº "; break;
+		case 5: cout << "ÐŸÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ "; break;
+		case 6: cout << "Ð¨ÐµÑÑ‚ÑŒÐ´ÐµÑÑÑ‚ "; break;
+		case 7: cout << "Ð¡ÐµÐ¼ÑŒÐ´ÐµÑÑÑ‚ "; break;
+		case 8: cout << "Ð’Ð¾ÑÐµÐ¼ÑŒÐ´ÐµÑÑÑ‚ "; break;
+		case 9: cout << "Ð”ÐµÐ²ÑÐ½Ð¾ÑÑ‚Ð¾ "; break;
 		}
 		switch (one)
 		{
-		case 1: cout << " Îäèí "; break;
-		case 2: cout << " Äâà "; break;
-		case 3: cout << " Òðè "; break;
-		case 4: cout << " ×åòûðå "; break;
-		case 5: cout << " Ïÿòü "; break;
-		case 6: cout << " Øåñòü "; break;
-		case 7: cout << " Ñåìü "; break;
-		case 8: cout << " Âîñåìü "; break;
-		case 9: cout << " Äåâÿòü "; break;
+		case 1: cout << " ÐžÐ´Ð¸Ð½ "; break;
+		case 2: cout << " Ð”Ð²Ð° "; break;
+		case 3: cout << " Ð¢Ñ€Ð¸ "; break;
+		case 4: cout << " Ð§ÐµÑ‚Ñ‹Ñ€Ðµ "; break;
+		case 5: cout << " ÐŸÑÑ‚ÑŒ "; break;
+		case 6: cout << " Ð¨ÐµÑÑ‚ÑŒ "; break;
+		case 7: cout << " Ð¡ÐµÐ¼ÑŒ "; break;
+		case 8: cout << " Ð’Ð¾ÑÐµÐ¼ÑŒ "; break;
+		case 9: cout << " Ð”ÐµÐ²ÑÑ‚ÑŒ "; break;
 		}
 
 	}
 	//copy -= ten * 10;
 	//////////////////////////////////////////////////////
 
-	if (money % 100 < 20 && money % 100 > 10 || money % 10 > 4 || money % 10 == 0)cout << " äîëëàðîâ";
-	else if (money % 10 == 1) cout << " äîëëàð ";
-	else cout << " äîëëàðà ";
+	if (money % 100 < 20 && money % 100 > 10 || money % 10 > 4 || money % 10 == 0)cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€Ð¾Ð²";
+	else if (money % 10 == 1) cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€ ";
+	else cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€Ð° ";
 
 	/*if (money % 20 > 9 || money % 10 > 4 || money % 10 == 0)
 	{
-		cout << " äîëëàðîâ";
+		cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€Ð¾Ð²";
 	}
 	else if (money % 10 > 1)
 	{
-		cout << " äîëëàðà";
+		cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€Ð°";
 	}
 	else if (money % 10 == 1)
 	{
-		cout << " äîëëàð";
+		cout << " Ð´Ð¾Ð»Ð»Ð°Ñ€";
 	}*/
 
 	cout << endl;
