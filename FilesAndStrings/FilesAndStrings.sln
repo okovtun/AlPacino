@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FilesAndStrings", "FilesAnd
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capitalize", "Capitalize\Capitalize.vcxproj", "{ED18338E-B46C-4A7F-BA61-EBA8E4307393}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Var7task2", "Var7task2\Var7task2.vcxproj", "{B7395AC2-F6E1-490C-BC64-771EC089DCCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{ED18338E-B46C-4A7F-BA61-EBA8E4307393}.Release|x64.Build.0 = Release|x64
 		{ED18338E-B46C-4A7F-BA61-EBA8E4307393}.Release|x86.ActiveCfg = Release|Win32
 		{ED18338E-B46C-4A7F-BA61-EBA8E4307393}.Release|x86.Build.0 = Release|Win32
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Debug|x64.ActiveCfg = Debug|x64
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Debug|x64.Build.0 = Debug|x64
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Debug|x86.Build.0 = Debug|Win32
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Release|x64.ActiveCfg = Release|x64
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Release|x64.Build.0 = Release|x64
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Release|x86.ActiveCfg = Release|Win32
+		{B7395AC2-F6E1-490C-BC64-771EC089DCCE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
